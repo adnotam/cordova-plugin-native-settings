@@ -1,29 +1,28 @@
-<?xml version="1.0" encoding="UTF-8"?><plugin xmlns="http://www.phonegap.com/ns/plugins/1.0"
-	xmlns:android="http://schemas.android.com/apk/res/android"
-	id="com.phonegap.plugins.nativesettingsopener"
-	version="1.3.0">
+<?xml version="1.0" encoding="UTF-8"?>
 
-	<name>Native settings</name>
-	<description>Native settings opener for Cordova 4.0</description>
+<plugin xmlns="http://apache.org/cordova/ns/plugins/1.0"
+	id="cordova-plugin-native-settings"
+	version="1.0.0">
+	<name>NativeSettings</name>
+	<description>Native settings opener for Cordova 4.0 - 7.0</description>
 	<license>MIT</license>
-
-	<engines>
-		<engine name="cordova" version=">=4.0.0" />
-	</engines>    
+	<keywords>native-settings</keywords>
+	<repo>https://github.com/BradyLiles/cordova-plugin-native-settings</repo>
+	<issue>https://github.com/BradyLiles/cordova-plugin-native-settings/issues</issue>
 
 	<js-module src="www/settings.js" name="Settings">
-		<clobbers target="cordova.plugins.settings" />
+		<clobbers target="cordova.plugins.NativeSettings" />
 	</js-module>
 
 	<!-- android -->
 	<platform name="android">
-		<source-file src="src/android/NativeSettings.java" target-dir="src/com/phonegap/plugins/nativesettings" />
-
 		<config-file target="res/xml/config.xml" parent="/*">
 			<feature name="NativeSettings">
 				<param name="android-package" value="com.phonegap.plugins.nativesettings.NativeSettings" />
 			</feature>
 		</config-file>
+
+		<source-file src="src/android/NativeSettings.java" target-dir="src/com/phonegap/plugins/nativesettings" />
 	</platform>
 
 	<!-- ios -->
