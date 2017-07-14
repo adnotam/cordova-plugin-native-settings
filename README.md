@@ -6,13 +6,7 @@ The plugin allows you to open OS settings on iOS 8/9/10 and Android, via cordova
 It will be saved to the config.xml file
 
 ```bash
-cordova plugin (add|rm) https://github.com/guyromb/Cordova-open-native-settings.git --save
-```
-
-or via npm (It will be saved to the package.json file)
-
-```bash
-npm (install|rm) https://github.com/guyromb/Cordova-open-native-settings.git --save
+cordova plugin (add|rm) cordova-plugin-native-settings --save
 ```
 
 ##Using the plugin (opens Location Settings in Android and Application Settings in iOS)
@@ -120,28 +114,3 @@ You can use any constant from the following list:
 * iOS plugin based on the following information: https://gist.github.com/phynet/471089a51b8f940f0fb4
 * In iOS, this plugin generates a URL scheme for the *-Info.plist configurations file.
 * The plugin for Android is based on the forked repository and was refactored. The iOS part was built from skretch.
-
-##License
-```
-The MIT License
-
-Copyright (c) 2016 Guy Rombaut
-
-Permission is hereby granted, free of charge, to any person obtaining a copy
-of this software and associated documentation files (the "Software"), to deal
-in the Software without restriction, including without limitation the rights
-to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
-copies of the Software, and to permit persons to whom the Software is
-furnished to do so, subject to the following conditions:
-
-The above copyright notice and this permission notice shall be included in
-all copies or substantial portions of the Software.
-
-THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
-IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
-FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
-AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
-LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
-OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
-THE SOFTWARE.
-```
