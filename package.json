@@ -44,5 +44,6 @@
   "bugs": {
     "url": "https://github.com/BradyLiles/cordova-plugin-native-settings/issues"
   },
-  "homepage": "https://github.com/BradyLiles/cordova-plugin-native-settings#readme"
+  "homepage": "https://github.com/BradyLiles/cordova-plugin-native-settings#readme",
+  "main": "www/settings.js"
 }
